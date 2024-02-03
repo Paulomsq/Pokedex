@@ -1,0 +1,293 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white ;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+#pokedex{
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+}
+
+#head{
+    height: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#head a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 3rem;
+    padding: .5rem 0 0 .5rem;
+}
+
+#bar-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-between;
+
+}
+
+#nome{
+    text-transform: capitalize;
+    margin: 1rem 0;
+    font-weight: 800;
+}
+
+#pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow{
+    font-size: 3rem;
+    color: #6a6a6a;
+    padding: 0;
+    margin: 0;
+    padding-left: .7rem;
+}
+
+#pokemon-imagem{
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+#infos{
+    height: auto;
+    margin: 0;
+    width: 100%;
+    padding-top: 5rem;
+    border-radius: 1.4rem 1.4rem 0 0;
+    background-image: url('../img/pokeball90.svg');
+    background-repeat: no-repeat;
+    background-position: 150px 150px;
+    background-size: cover;
+    
+}
+
+#tipos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: capitalize;  
+    gap: 4rem;   
+}
+
+#tipo{
+    padding: 0.2rem 0.5rem;
+    color: white;
+    margin: .25rem 0;
+    border-radius: 5rem;
+    text-align: center;
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+    filter: brightness(1.1);
+}
+
+#detalhes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 1.5rem 0;
+}
+
+#detalhes span{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#peso, #altura, #categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+#peso .name,
+#altura .name,
+#categoria .name{
+    font-weight: 600;
+}
+
+
+.vertical-bar{
+    height: 5rem;
+    width: 1px;
+    background-color: whitesmoke;
+}
+
+#pokemon-habilidades{
+    background-color: white;
+    height: auto;
+    padding: 1rem .5rem;
+    border-radius: 1rem;
+    margin: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+
+#pokemon-habilidades h3{
+    margin: 0;
+    font-weight: 550;
+}
+
+#habilidades{
+    display: flex;
+    gap: 20px;
+    font-size: 1.05rem;
+}
+
+#status{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+#statusName{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    text-align: right;
+    gap: .7rem;
+    font-weight: 600;
+}
+
+
+#status  .vertical-bar{
+    height: 11rem;
+}
+
+.progress-bar{
+    box-sizing: border-box;
+    border: 1px solid black;
+    max-width: 100%;
+    height: 12px;
+} 
+
+.progress{
+    margin: .7rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.progress-bar::-webkit-progress-bar{
+    background-color: #F0F8FF;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #11bf34;
+} 
+
+#pokeballImg{
+    z-index: 2;
+}
+
+#vlStatus{
+    margin: 0 2rem;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+@media screen and (min-height: 730px) {
+    #infos{
+        padding-top: 3.5rem;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    #head{
+        height: 35%;
+    }    
+    #infos{
+        height: 65%;
+    }
+}

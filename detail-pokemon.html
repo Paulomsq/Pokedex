@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PokeDex</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="./css/detail.css">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    
+    </head>
+<body>
+    <section id="pokedex">
+        <div id="head">
+            
+            <a href="http://192.168.10.106:8090/Pokedex/" class="material-symbols-outlined">menu</a>
+
+            
+            <div id="bar-top">
+                <span id="numero"></span>
+                <h2 id="nome"></h2>
+            </div>
+            <div id="pokemon">
+            </div>
+        </div>
+        <div id="infos">
+            
+            <div id="tipos">
+                
+            </div>
+            <div id="detalhes">                
+            </div>
+            <div id="pokemon-habilidades">
+                <h3>Habilidades</h3>
+                <div id="habilidades"></div>
+            </div>
+            <div id="status">
+                <div id="statusName">
+                    <span>HP</span>
+                    <span>ATK</span>
+                    <span>DEF</span> 
+                    <span>SATK</span> 
+                    <span>SDEF</span> 
+                    <span>SPD</span> 
+                </div>
+                <div class="vertical-bar"></div>
+                <div id="vlStatus">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/pokemonColor.js"></script>
+    <script src="./js/pokemon-model.js"></script>
+    <script src="./js/poke-api.js"></script>
+    <script src="./js/pokemon-detail.js"></script>
+</body>
+</html>
